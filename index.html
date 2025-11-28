@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="manifest" href="manifest.json">
+<title>SwadPoint</title>
+<style>
+body {
+  font-family: Arial;
+  background: #ffe9c7;
+  margin: 0;
+}
+header {
+  background: #ff7b00;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  font-weight: bold;
+}
+.card {
+  background: white;
+  margin: 12px;
+  padding: 20px;
+  border-radius: 15px;
+  font-size: 22px;
+  box-shadow: 0 3px 7px rgba(0,0,0,.2);
+}
+.btn {
+  background: #ff7b00;
+  padding: 12px;
+  display: inline-block;
+  color: white;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>SwadPoint</header>
+
+<div class="card">
+ <b>🍽 Menu:</b><br><br>
+ Samosa<br>
+ Litti<br>
+ Pakaude<br>
+ Aalu Chap<br>
+ Kachri<br>
+ Gaja<br>
+ Khaja<br>
+ Balushahi<br>
+ Rasgulla<br>
+ Gulabjamun<br>
+ Buniya Jalebi<br>
+ Chai
+</div>
+
+<div class="card">
+ <b>📦 Delivery Charge:</b> ₹15 / km
+</div>
+
+<div class="card">
+ <b>📲 Order Kare:</b><br>
+ <a class="btn" href="https://wa.me/917091084967?text=Namaste%20SwadPoint!%20Mujhe%20order%20dena%20hai.">
+  WhatsApp Par Order
+ </a>
+</div>
+
+<script>
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('sw.js');
+}
+</script>
+
+</body>
+</html>
